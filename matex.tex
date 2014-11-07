@@ -1,0 +1,39 @@
+% Demonstrating how to use Matlab and Latex to place data analysis results directly into a manuscript
+% Emily Cooper, Stanford, 2014
+
+\documentclass{article}
+\usepackage{times}
+\include{variables} % this is where we are including the matlab-generated variables file -- Must run matlab script before typesetting 
+\begin{document}
+ 
+
+% title and author info
+\title{How to load results from Matlab analyses into a Latex document} 
+\author{Emily A. Cooper\\
+        Department of Psychology,\\
+		Stanford University,\\
+		Stanford, CA\\
+		USA\\
+		eacooper@stanford.edu}
+\maketitle
+ 
+ 
+\begin{abstract}
+Use the Matlab script matex.m to write out variable definitions in the proper format to variables.tex. Read these into the Latex document using the 'include' command. 
+\end{abstract}
+ 
+\section{Introduction}
+
+\section{Methods}
+
+We collected \numSamples{} samples in the \conditionNamesA{} and \conditionNamesB{} conditions.
+
+\section{Results}
+
+We performed a paired t-test to determine if there was a significant difference between the means of the two conditions (\conditionNamesA{} M = \meansA{}, \conditionNamesB{} M = \meansB{}, {\emph{p} = \p{}).
+
+\begin{thebibliography}{9}
+ 
+\end{thebibliography}
+ 
+\end{document}
